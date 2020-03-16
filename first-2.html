@@ -6,6 +6,27 @@
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+		<style>
+		footer{
+			margin-top: 80px;
+  	  background: #7e7e7e;
+  	  color: #dbdbdb;
+  	  font-size: 11px;
+			position:absolute;
+		}
+		</style>
+		<script>
+		function myFunction(){
+		 var num = document.getElementById("myinput").value;
+		 
+		 if(num == 4096){
+		 document.getElementById("answ").innerHTML = "верно";
+		}
+		else {
+		 document.getElementById("answ").innerHTML = "неверно";
+		}}
+    </script>
+		
 	</head>
 	<body>
 		<header>
@@ -62,63 +83,23 @@
 							</nav>
 						</aside>
 					</div>
-					<div class="conent-first">
-						<h2>Количество информации</h2>
-						<p>
-					Количество информации,Количество информации,Количество информации,Количество информации,Количество информации,Количество информации
-						</p>
+				<div class="conent-first">
+					<h2>Системы счисления</h2>
+					<div class="content-wrap">
+						<div class="content-main">
+							<h3>2.Количество информации</h3>
+							<p>На носителе информации файлы записываются в блоки, при этом один файл может занимать несколько блоков, а в один блок невозможно записать несколько файлов. На носитель записали некоторое количество файлов с фотографиями. Каждый файл содержит только информацию о цветах всех точек растрового изображения без сжатия и дополнительной информации. Изображение имеет размер 2362*3543 точек и глубину цвета 24 бита/точку. Определите минимальный объем носителя, если известно, что при размере блока 16 КБайт на него записано 171 фотографий, а при размере блока 64 КБайта на него записано 170 фотографий. В ответе укажите целое число МБайт.
+							</p>
+							<div class="ansver">
+									<input type="text" value="" id="myinput">
+								</div>
+								<div class="btn">
+									<button onclick="myFunction()">Отправить</button>
+									<p id = "answ"></p>
+								</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="content">
-			<div class="wrapper">
-				<h2>Название блока</h2>
-				<div class="block-wrap">
-					<div class="block-section">
-						<a href="">
-							<div class="title">
-								<span>Титл блока</span>
-							</div>
-							<figure>
-								<img src="images/1.jpg" alt="">
-							</figure>
-							<p>текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,</p>
-						</a>
-					</div>
-					<div class="block-section">
-						<a href="">
-							<div class="title">
-								<span>Титл блока</span>
-							</div>
-							<figure>
-								<img src="images/2.jpg" alt="">
-							</figure>
-							<p>текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,</p>
-						</a>
-					</div>
-					<div class="block-section">
-						<a href="">
-							<div class="title">
-								<span>Титл блока</span>
-							</div>
-							<figure>
-								<img src="images/1.jpg" alt="">
-							</figure>
-							<p>текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,</p>
-						</a>
-					</div>
-					<div class="block-section">
-						<a href="">
-							<div class="title">
-								<span>Титл блока</span>
-							</div>
-							<figure>
-								<img src="images/2.jpg" alt="">
-							</figure>
-							<p>текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,текст блока,</p>
-						</a>
-					</div>
 				</div>
 			</div>
 		</section>

@@ -6,6 +6,26 @@
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+		<style>
+		footer{
+			margin-top: 80px;
+  	  background: #7e7e7e;
+  	  color: #dbdbdb;
+  	  font-size: 11px;
+			position:absolute;
+		}
+		</style>
+		<script>
+		function myFunction(){
+		 var num = document.getElementById("myinput").value;
+		 
+		 if(num == 12){
+		 document.getElementById("answ").innerHTML = "верно";
+		}
+		else {
+		 document.getElementById("answ").innerHTML = "неверно";
+		}}
+    </script>
 	</head>
 	<body>
 		<header>
@@ -62,28 +82,26 @@
 							</nav>
 						</aside>
 					</div>
-					<div class="conent-first">
-						<h2>Основы логики</h2>
-						<p>
-					Основы логики,Основы логики,Основы логики,Основы логики,Основы логики,Основы логики
-						</p>
-												<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
-												<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
+				<div class="conent-first">
+					<h2>Системы счисления</h2>
+					<div class="content-wrap">
+						<div class="content-main">
+							<h3>3.Основы логика:</h3>
+							<p>Упростите логическое выражение или укажите его результат (при его однозначности). Результат упрощения может содержать только операции инверсии,
+								конъюнкции и дизъюнкции. (B ; or ; not ; A ; and ; C) \to (A ; or ; not ; B ; and ; C)(BornotAandC)→(AornotBandC)
+							 Комментарий по вводу ответа: операнды вводятся большими латинскими буквами; логические операции обозначаются, соответственно как not, and и or. Скобки используются только для изменения порядка выполнения операций. Если порядок выполнения операций очевиден из их приоритетов – дополнительное использование скобок считается ошибкой. При однозначном ответе – истинный ответ обозначается как 1, а ложный как 0. Пример записи ответа: (A or not B) and C
+							</p>
+							<div class="ansver">
+									<input type="text" value="" id="myinput">
+								</div>
+								<div class="btn">
+									<button onclick="myFunction()">Отправить</button>
+									<p id = "answ"></p>
+								</div>
+						</div>
+
 					</div>
+				</div>
 				</div>
 			</div>
 		</section>
