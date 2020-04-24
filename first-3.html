@@ -17,9 +17,9 @@
 		</style>
 		<script>
 		function myFunction(){
-		 var num = document.getElementById("myinput").value;
-		 
-		 if(num == 12){
+		 let num = document.getElementById("myinput").value;
+		 let num2 = 'not A and not B and C';
+		 if(num == num2 ){
 		 document.getElementById("answ").innerHTML = "верно";
 		}
 		else {
@@ -88,7 +88,7 @@
 						<div class="content-main">
 							<h3>3.Основы логика:</h3>
 							<p>Упростите логическое выражение или укажите его результат (при его однозначности). Результат упрощения может содержать только операции инверсии,
-								конъюнкции и дизъюнкции. (B ; or ; not ; A ; and ; C) \to (A ; or ; not ; B ; and ; C)(BornotAandC)→(AornotBandC)
+								конъюнкции и дизъюнкции. ((A and B and not C) ↔ (A or B or not C)) and C
 							 Комментарий по вводу ответа: операнды вводятся большими латинскими буквами; логические операции обозначаются, соответственно как not, and и or. Скобки используются только для изменения порядка выполнения операций. Если порядок выполнения операций очевиден из их приоритетов – дополнительное использование скобок считается ошибкой. При однозначном ответе – истинный ответ обозначается как 1, а ложный как 0. Пример записи ответа: (A or not B) and C
 							</p>
 							<div class="ansver">
